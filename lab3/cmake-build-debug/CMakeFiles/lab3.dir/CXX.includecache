@@ -6,23 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/media/DATA/studia/cpp_laby/lab3/Grupa.h
-iostream
--
-Osoba.h
-/media/DATA/studia/cpp_laby/lab3/Osoba.h
+/media/DATA/studia/cpp_laby/lab3/Punkt.h
 
-/media/DATA/studia/cpp_laby/lab3/Osoba.h
+/media/DATA/studia/cpp_laby/lab3/Wielokat.h
 iostream
 -
+Punkt.h
+/media/DATA/studia/cpp_laby/lab3/Punkt.h
 
 /media/DATA/studia/cpp_laby/lab3/main.cpp
 iostream
 -
-stdexcept
--
-Osoba.h
-/media/DATA/studia/cpp_laby/lab3/Osoba.h
-Grupa.h
-/media/DATA/studia/cpp_laby/lab3/Grupa.h
+Punkt.h
+/media/DATA/studia/cpp_laby/lab3/Punkt.h
+Wielokat.h
+/media/DATA/studia/cpp_laby/lab3/Wielokat.h
 

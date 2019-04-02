@@ -70,44 +70,44 @@ CMakeFiles/lab3.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab3.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/DATA/studia/cpp_laby/lab3/main.cpp -o CMakeFiles/lab3.dir/main.cpp.s
 
-CMakeFiles/lab3.dir/Punkt.cpp.o: CMakeFiles/lab3.dir/flags.make
-CMakeFiles/lab3.dir/Punkt.cpp.o: ../Punkt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/DATA/studia/cpp_laby/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab3.dir/Punkt.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab3.dir/Punkt.cpp.o -c /media/DATA/studia/cpp_laby/lab3/Punkt.cpp
+CMakeFiles/lab3.dir/Osoba.cpp.o: CMakeFiles/lab3.dir/flags.make
+CMakeFiles/lab3.dir/Osoba.cpp.o: ../Osoba.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/DATA/studia/cpp_laby/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab3.dir/Osoba.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab3.dir/Osoba.cpp.o -c /media/DATA/studia/cpp_laby/lab3/Osoba.cpp
 
-CMakeFiles/lab3.dir/Punkt.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab3.dir/Punkt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/DATA/studia/cpp_laby/lab3/Punkt.cpp > CMakeFiles/lab3.dir/Punkt.cpp.i
+CMakeFiles/lab3.dir/Osoba.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab3.dir/Osoba.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/DATA/studia/cpp_laby/lab3/Osoba.cpp > CMakeFiles/lab3.dir/Osoba.cpp.i
 
-CMakeFiles/lab3.dir/Punkt.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab3.dir/Punkt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/DATA/studia/cpp_laby/lab3/Punkt.cpp -o CMakeFiles/lab3.dir/Punkt.cpp.s
+CMakeFiles/lab3.dir/Osoba.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab3.dir/Osoba.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/DATA/studia/cpp_laby/lab3/Osoba.cpp -o CMakeFiles/lab3.dir/Osoba.cpp.s
 
-CMakeFiles/lab3.dir/Wielokat.cpp.o: CMakeFiles/lab3.dir/flags.make
-CMakeFiles/lab3.dir/Wielokat.cpp.o: ../Wielokat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/DATA/studia/cpp_laby/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab3.dir/Wielokat.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab3.dir/Wielokat.cpp.o -c /media/DATA/studia/cpp_laby/lab3/Wielokat.cpp
+CMakeFiles/lab3.dir/Grupa.cpp.o: CMakeFiles/lab3.dir/flags.make
+CMakeFiles/lab3.dir/Grupa.cpp.o: ../Grupa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/DATA/studia/cpp_laby/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab3.dir/Grupa.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab3.dir/Grupa.cpp.o -c /media/DATA/studia/cpp_laby/lab3/Grupa.cpp
 
-CMakeFiles/lab3.dir/Wielokat.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab3.dir/Wielokat.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/DATA/studia/cpp_laby/lab3/Wielokat.cpp > CMakeFiles/lab3.dir/Wielokat.cpp.i
+CMakeFiles/lab3.dir/Grupa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab3.dir/Grupa.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/DATA/studia/cpp_laby/lab3/Grupa.cpp > CMakeFiles/lab3.dir/Grupa.cpp.i
 
-CMakeFiles/lab3.dir/Wielokat.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab3.dir/Wielokat.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/DATA/studia/cpp_laby/lab3/Wielokat.cpp -o CMakeFiles/lab3.dir/Wielokat.cpp.s
+CMakeFiles/lab3.dir/Grupa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab3.dir/Grupa.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/DATA/studia/cpp_laby/lab3/Grupa.cpp -o CMakeFiles/lab3.dir/Grupa.cpp.s
 
 # Object files for target lab3
 lab3_OBJECTS = \
 "CMakeFiles/lab3.dir/main.cpp.o" \
-"CMakeFiles/lab3.dir/Punkt.cpp.o" \
-"CMakeFiles/lab3.dir/Wielokat.cpp.o"
+"CMakeFiles/lab3.dir/Osoba.cpp.o" \
+"CMakeFiles/lab3.dir/Grupa.cpp.o"
 
 # External object files for target lab3
 lab3_EXTERNAL_OBJECTS =
 
 lab3: CMakeFiles/lab3.dir/main.cpp.o
-lab3: CMakeFiles/lab3.dir/Punkt.cpp.o
-lab3: CMakeFiles/lab3.dir/Wielokat.cpp.o
+lab3: CMakeFiles/lab3.dir/Osoba.cpp.o
+lab3: CMakeFiles/lab3.dir/Grupa.cpp.o
 lab3: CMakeFiles/lab3.dir/build.make
 lab3: CMakeFiles/lab3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/DATA/studia/cpp_laby/lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lab3"

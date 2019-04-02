@@ -1,54 +1,54 @@
 #include <iostream>
-#include <stdexcept>
-#include "Osoba.h"
-#include "Grupa.h"
+#include "Punkt.h"
+#include "Wielokat.h"
 
 using namespace std;
 
 int main() {
     cout << "Test lab3" << endl;
-    Osoba osoba1;
-    Osoba osoba2("Maciek", 5);
-    Osoba osoba3("Maciek");
-    Osoba osoba4(5);
+    Punkt punkt1;
+    Punkt punkt2(2, 5);
+    Punkt punkt3(10, 11);
+    Punkt punkt4(5, 8);
+
+    cout << "Punkt2: " << punkt2.getX() << ", " << punkt2.getY() << endl;
+    punkt2.setX(5);
+    punkt2.setY(12);
+    cout << "Punkt2 po zmianie" << punkt2.getX() << ", " << punkt2.getY() << endl;
+
+    cout << "Test Wielokątów" << endl;
+
+    Wielokat wielokat(20);
+    Wielokat wielokat1;
+
+    cout << "Ilość pkt: " << wielokat.getElementCount() << " " << wielokat.getTabSize() << endl;
+    wielokat.addPunkt(punkt1);
+    wielokat.addPunkt(punkt2);
+    cout << "Ilość pkt: " << wielokat.getElementCount() << endl;
 
     try {
-        Osoba osoba5("", -5);
-    }
-    catch(exception& e) {
-        cout<<e.what();
-    }
-
-    cout << "Osoba2" << osoba2.getImie() << ", " << osoba2.getRok() << endl;
-    osoba2.setImie("Marek");
-    osoba2.setRok(2000);
-    cout << "Osoba2 po zmianie" << osoba2.getImie() << ", " << osoba2.getRok() << endl;
-
-    cout << "Test Grupy" << endl;
-
-    Grupa grupa;
-    Grupa grupa1(2);
-
-    cout << "Ilość osób w grupe: " << grupa.getElementCount() << " " << grupa.getTabSize() << endl;
-    grupa.addOsoba(osoba1);
-    grupa.addOsoba(osoba2);
-    cout << "Ilość osób w grupe: " << grupa.getElementCount() << endl;
-
-    try {
-        grupa1.addOsoba(osoba1);
-        grupa1.addOsoba(osoba2);
-        grupa1.addOsoba(osoba3);
-        grupa1.addOsoba(osoba4);
+        wielokat1.addPunkt(punkt1);
+        wielokat1.addPunkt(punkt2);
+        wielokat1.addPunkt(punkt3);
+        wielokat1.addPunkt(punkt4);
     }
     catch(exception& e) {
         cout<<"Exception: " << e.what() << endl;
     }
 
-    Grupa grupaCopy(grupa);
-    cout << "Ilość osób w grupe: " << grupaCopy.getElementCount() << endl;
+    Wielokat wielokatCopy(wielokat);
+    cout << "Ilość pkt: " << wielokatCopy.getElementCount() << endl;
 
-    Grupa tmp = grupaCopy;
-    cout << "Ilość osób w grupe: " << tmp.getElementCount() << endl;
+    Wielokat tmp = wielokatCopy;
+    cout << "Ilość pkt: " << tmp.getElementCount() << endl;
+    cout << "pkt[1]: (" << tmp[1].getX() << ", " << tmp[1].getY() << ")" << endl;
+
+    Wielokat w1;
+    Punkt pkt(3,4);
+    w1.addPunkt(pkt);
+    Wielokat w2;
+    w2 = std::move(w1);
+    cout << "pkt[0]: (" << w2[0].getX() << ", " << w2[0].getY() << ")" << endl;
 
     return 0;
 }

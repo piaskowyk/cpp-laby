@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lab3.dir/main.cpp.o"
-  "CMakeFiles/lab3.dir/Punkt.cpp.o"
-  "CMakeFiles/lab3.dir/Wielokat.cpp.o"
+  "CMakeFiles/lab3.dir/Osoba.cpp.o"
+  "CMakeFiles/lab3.dir/Grupa.cpp.o"
   "lab3.pdb"
   "lab3"
 )

@@ -123,59 +123,59 @@ lab3/fast:
 	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/build
 .PHONY : lab3/fast
 
-Punkt.o: Punkt.cpp.o
+Grupa.o: Grupa.cpp.o
 
-.PHONY : Punkt.o
-
-# target to build an object file
-Punkt.cpp.o:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Punkt.cpp.o
-.PHONY : Punkt.cpp.o
-
-Punkt.i: Punkt.cpp.i
-
-.PHONY : Punkt.i
-
-# target to preprocess a source file
-Punkt.cpp.i:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Punkt.cpp.i
-.PHONY : Punkt.cpp.i
-
-Punkt.s: Punkt.cpp.s
-
-.PHONY : Punkt.s
-
-# target to generate assembly for a file
-Punkt.cpp.s:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Punkt.cpp.s
-.PHONY : Punkt.cpp.s
-
-Wielokat.o: Wielokat.cpp.o
-
-.PHONY : Wielokat.o
+.PHONY : Grupa.o
 
 # target to build an object file
-Wielokat.cpp.o:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Wielokat.cpp.o
-.PHONY : Wielokat.cpp.o
+Grupa.cpp.o:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Grupa.cpp.o
+.PHONY : Grupa.cpp.o
 
-Wielokat.i: Wielokat.cpp.i
+Grupa.i: Grupa.cpp.i
 
-.PHONY : Wielokat.i
+.PHONY : Grupa.i
 
 # target to preprocess a source file
-Wielokat.cpp.i:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Wielokat.cpp.i
-.PHONY : Wielokat.cpp.i
+Grupa.cpp.i:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Grupa.cpp.i
+.PHONY : Grupa.cpp.i
 
-Wielokat.s: Wielokat.cpp.s
+Grupa.s: Grupa.cpp.s
 
-.PHONY : Wielokat.s
+.PHONY : Grupa.s
 
 # target to generate assembly for a file
-Wielokat.cpp.s:
-	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Wielokat.cpp.s
-.PHONY : Wielokat.cpp.s
+Grupa.cpp.s:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Grupa.cpp.s
+.PHONY : Grupa.cpp.s
+
+Osoba.o: Osoba.cpp.o
+
+.PHONY : Osoba.o
+
+# target to build an object file
+Osoba.cpp.o:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Osoba.cpp.o
+.PHONY : Osoba.cpp.o
+
+Osoba.i: Osoba.cpp.i
+
+.PHONY : Osoba.i
+
+# target to preprocess a source file
+Osoba.cpp.i:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Osoba.cpp.i
+.PHONY : Osoba.cpp.i
+
+Osoba.s: Osoba.cpp.s
+
+.PHONY : Osoba.s
+
+# target to generate assembly for a file
+Osoba.cpp.s:
+	$(MAKE) -f CMakeFiles/lab3.dir/build.make CMakeFiles/lab3.dir/Osoba.cpp.s
+.PHONY : Osoba.cpp.s
 
 main.o: main.cpp.o
 
@@ -213,12 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... lab3"
 	@echo "... edit_cache"
-	@echo "... Punkt.o"
-	@echo "... Punkt.i"
-	@echo "... Punkt.s"
-	@echo "... Wielokat.o"
-	@echo "... Wielokat.i"
-	@echo "... Wielokat.s"
+	@echo "... Grupa.o"
+	@echo "... Grupa.i"
+	@echo "... Grupa.s"
+	@echo "... Osoba.o"
+	@echo "... Osoba.i"
+	@echo "... Osoba.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
