@@ -1,175 +1,54 @@
 #include <iostream>
 #include "obiekty.h"
 
-Punkt::Punkt(): x(0), y(0) {}
+Wektor1x2::Wektor1x2(): x(0), y(0) {}
 
-Punkt::Punkt(double x, double y): x{x}, y{y} {}
+Wektor1x2::Wektor1x2(int x, int y): x{x}, y{y} {}
 
-double Punkt::getX() const {
+int Wektor1x2::getX() const {
     return this->x;
 }
 
-double Punkt::getY() const{
+int Wektor1x2::getY() const{
     return this->y;
 }
 
-void Punkt::setX(double x){
+void Wektor1x2::setX(int x){
     this->x = x;
 }
 
-void Punkt::setY(double y){
+void Wektor1x2::setY(int y){
     this->y = y;
 }
 
-//###############################################################################
-
-Macierz::Macierz(): Macierz(0,0,0) {} //mxx(0), myy(0), mxy(0) {}
-
-Macierz::Macierz(double mxx, double myy, double mxy): mxx{mxx}, myy{myy}, mxy{mxy} {}
-
-double Macierz::getMxx() const {
-    return mxx;
-}
-
-void Macierz::setMxx(double mxx) {
-    Macierz::mxx = mxx;
-}
-
-double Macierz::getMyy() const {
-    return myy;
-}
-
-void Macierz::setMyy(double myy) {
-    Macierz::myy = myy;
-}
-
-double Macierz::getMxy() const {
-    return mxy;
-}
-
-void Macierz::setMxy(double mxy) {
-    Macierz::mxy = mxy;
-}
-
-std::ostream & operator << (std::ostream &out, const Macierz &matrix) {
-    return out <<
-        "(0,0): " << matrix.getMxx() << std::endl <<
-        "(1,0): " << matrix.getMxy() << std::endl <<
-        "(0,1): " << matrix.getMyy() << std::endl <<
-        "(1,1): " << matrix.getMxy() << std::endl;
-}
-
-std::ostream & operator << (std::ostream &out, const Punkt &pkt) {
+std::ostream & operator << (std::ostream &out, const Wektor1x2 &pkt) {
     return out << "(" << pkt.getX() << "," << pkt.getY() << ")";
 }
 
+Wektor1x2 operator * (const Wektor1x2& w, const int& k){
+    Wektor1x2 result;
 
-void Macierz::operator -= (const Macierz & matrix){
-    this->mxy -= matrix.mxy;
-    this->mxx -= matrix.mxx;
-    this->myy -= matrix.myy;
-}
-
-Macierz Macierz::operator - (const Macierz & matrix){
-    Macierz m;
-    m.mxy = this->mxy - matrix.mxy;
-    m.mxx = this->mxx - matrix.mxx;
-    m.myy = this->myy - matrix.myy;
-
-    return m;
-}
-
-Macierz::Macierz(const Macierz &other) {
-    this->mxy = other.mxy;
-    this->mxx = other.mxx;
-    this->myy = other.myy;
-}
-
-Punkt Macierz::operator * (const Punkt & pkt){
-    Punkt result;
-
-    result.setX(this->mxx * pkt.getX() + this->mxy * pkt.getY());
-    result.setX(this->myy * pkt.getX()  + this->mxy * pkt.getY());
+    result.setX(w.getX() * k);
+    result.setY(w.getY() * k);
 
     return result;
 }
 
-Punkt Punkt::operator * (const Macierz & matrix){
-    Punkt result;
+Wektor1x2 operator * (const int& k, const Wektor1x2& w){
+    Wektor1x2 result;
 
-    result.setX(matrix.getMxx() * this->x + matrix.getMxy() * this->y);
-    result.setX(matrix.getMyy() * this->x  + matrix.getMxy() * this->y);
-
-    return result;
-}
-
-Macierz operator+(const Macierz &first, const Macierz &second) {
-    Macierz result(first);
-
-    result.setMxx(first.getMxx() + second.getMxx());
-    result.setMxy(first.getMxy() + second.getMxy());
-    result.setMyy(first.getMyy() + second.getMyy());
+    result.setX(k * w.getX());
+    result.setY(k * w.getY());
 
     return result;
 }
 
-Macierz operator * (const Macierz &matrix, const double &factor) {
-    Macierz result(matrix);
-
-    result.setMxx(matrix.getMxx() * factor);
-    result.setMxy(matrix.getMxy() * factor);
-    result.setMyy(matrix.getMyy() * factor);
-
-    return result;
-}
-
-Macierz operator * (const double &factor, const Macierz &matrix) {
-    Macierz result(matrix);
-
-    result.setMxx(matrix.getMxx() * factor);
-    result.setMxy(matrix.getMxy() * factor);
-    result.setMyy(matrix.getMyy() * factor);
-
-    return result;
-}
-
-Macierz& Macierz::operator--(){
-    --this->myy;
-    --this->mxx;
-    --this->mxy;
-
-    return *this;
-}
-
-Macierz * Macierz::operator--(int){
-    this->myy--;
-    this->mxx--;
-    this->mxy--;
-
-    return this;
-}
-
-Punkt& Punkt::operator-(){
-    this->y *= -1;
-    this->x *= -1;
-
-    return *this;
-}
-
-bool Macierz::operator < (const Macierz & matrix){
-    return this->mxx * this->myy - this->mxy * this->mxy < matrix.getMxx() * matrix.getMyy() - matrix.getMxy() * matrix.getMxy();
-}
-
-Macierz::operator double() {
-    return this->getMxx() * this->getMyy() - this->getMxy() * this->getMxy();
-}
-
-double Punkt::operator [] (const int index){
+int Wektor1x2::operator [] (const int index) const {
     if(index != 0 && index != 1){
         throw "Index out of array.";
     }
 
-    double out = 0;
+    int out = 0;
     if(index == 0){
         out = this->x;
     }
@@ -180,3 +59,121 @@ double Punkt::operator [] (const int index){
     return out;
 }
 
+Wektor1x2& Wektor1x2::operator - (){
+    this->y *= -1;
+    this->x *= -1;
+
+    return *this;
+}
+
+bool Wektor1x2::operator != (const Wektor1x2 &w) const {
+    return this->y != w.getY() && this->x != w.getX();
+}
+
+Wektor1x2::operator int() const {
+    return this->x * this->x + this->y * this->y;
+}
+
+
+//###############################################################################
+
+Macierz2x2::Macierz2x2(): Macierz2x2(0, 0, 0, 0) {}
+
+Macierz2x2::Macierz2x2(int a, int b, int c, int d): A{a}, B{b}, C{c}, D{d} {}
+
+int Macierz2x2::getA() const {
+    return A;
+}
+
+void Macierz2x2::setA(int a) {
+    Macierz2x2::A = a;
+}
+
+int Macierz2x2::getB() const {
+    return B;
+}
+
+void Macierz2x2::setB(int b) {
+    Macierz2x2::B = b;
+}
+
+int Macierz2x2::getC() const {
+    return C;
+}
+
+void Macierz2x2::setC(int c) {
+    Macierz2x2::C = c;
+}
+
+int Macierz2x2::getD() const {
+    return D;
+}
+
+void Macierz2x2::setD(int d) {
+    Macierz2x2::D = d;
+}
+
+std::ostream & operator << (std::ostream &out, const Macierz2x2 &matrix) {
+    return out <<
+        "(0,0): " << matrix.getA() << std::endl <<
+        "(1,0): " << matrix.getB() << std::endl <<
+        "(0,1): " << matrix.getC() << std::endl <<
+        "(1,1): " << matrix.getD() << std::endl;
+}
+
+Macierz2x2::Macierz2x2(const Macierz2x2 &other) {
+    this->C = other.C;
+    this->A = other.A;
+    this->B = other.B;
+    this->D = other.D;
+}
+
+Wektor1x2 Macierz2x2::operator * (const Wektor1x2 & w) const {
+    Wektor1x2 result;
+
+    result.setX(this->A * w.getX() + this->C * w.getY());
+    result.setX(this->B * w.getX()  + this->D * w.getY());
+
+    return result;
+}
+
+Macierz2x2 Macierz2x2::operator + (const Macierz2x2 &second) const {
+    Macierz2x2 result;
+
+    result.A = this->A + second.A;
+    result.C = this->C + second.C;
+    result.B = this->B + second.B;
+    result.D = this->D + second.D;
+
+    return result;
+}
+
+Macierz2x2& Macierz2x2::operator += (const Macierz2x2 &second) {
+
+    this->A += second.A;
+    this->B += second.B;
+    this->C += second.C;
+    this->D += second.D;
+
+    return *this;
+}
+
+Macierz2x2& Macierz2x2::operator -- (){
+    --this->A;
+    --this->B;
+    --this->C;
+    --this->D;
+
+    return *this;
+}
+
+const Macierz2x2 Macierz2x2::operator -- (int){
+    Macierz2x2 mCp(*this);
+
+    this->A--;
+    this->B--;
+    this->C--;
+    this->D--;
+
+    return mCp;
+}

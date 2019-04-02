@@ -12,6 +12,12 @@ iostream
 obiekty.h
 /media/DATA/studia/cpp_laby/lab2/obiekty.h
 
+/media/DATA/studia/cpp_laby/lab2/obiekty.cpp
+iostream
+-
+obiekty.h
+/media/DATA/studia/cpp_laby/lab2/obiekty.h
+
 /media/DATA/studia/cpp_laby/lab2/obiekty.h
 ostream
 -
