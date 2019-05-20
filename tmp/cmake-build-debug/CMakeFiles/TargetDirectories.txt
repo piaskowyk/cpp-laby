@@ -1,3 +1,0 @@
-/media/DATA/studia/cpp_laby/tmp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/media/DATA/studia/cpp_laby/tmp/cmake-build-debug/CMakeFiles/tmp.dir
-/media/DATA/studia/cpp_laby/tmp/cmake-build-debug/CMakeFiles/edit_cache.dir
