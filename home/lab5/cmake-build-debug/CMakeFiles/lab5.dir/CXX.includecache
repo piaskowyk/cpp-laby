@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/DATA/studia/cpp_laby/home/lab5/NodeBST.h
+iostream
+-
+
+/media/DATA/studia/cpp_laby/home/lab5/TreeBST.h
+iostream
+-
+NodeBST.h
+/media/DATA/studia/cpp_laby/home/lab5/NodeBST.h
+
+/media/DATA/studia/cpp_laby/home/lab5/main.cpp
+iostream
+-
+stdio.h
+-
+string.h
+-
+NodeBST.h
+/media/DATA/studia/cpp_laby/home/lab5/NodeBST.h
+TreeBST.h
+/media/DATA/studia/cpp_laby/home/lab5/TreeBST.h
+
