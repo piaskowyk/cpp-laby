@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/media/DATA/studia/cpp_laby/lab5/LinkList.h">
+			<Option target="lab5"/>
+		</Unit>
 		<Unit filename="/media/DATA/studia/cpp_laby/lab5/main.cpp">
 			<Option target="lab5"/>
 		</Unit>

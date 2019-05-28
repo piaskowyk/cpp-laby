@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/DATA/studia/cpp_laby/home/lab6/Osoba.h
+iostream
+-
+string.h
+-
+
+/media/DATA/studia/cpp_laby/home/lab6/main.cpp
+iostream
+-
+vector
+-
+set
+-
+map
+-
+algorithm
+-
+Osoba.h
+/media/DATA/studia/cpp_laby/home/lab6/Osoba.h
+

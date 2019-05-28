@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/DATA/studia/cpp_laby/lab5/LinkList.h
+iostream
+-
+
+/media/DATA/studia/cpp_laby/lab5/main.cpp
+iostream
+-
+cstring
+-
+LinkList.h
+/media/DATA/studia/cpp_laby/lab5/LinkList.h
+
